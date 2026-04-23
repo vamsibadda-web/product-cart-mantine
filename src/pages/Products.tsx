@@ -1,16 +1,6 @@
 
 import { useState } from "react";
-import {
-  Container,
-  Grid,
-  TextInput,
-  Select,
-  MultiSelect,
-  Group,
-  Tabs,
-  Drawer,
-  Button,
-} from "@mantine/core";
+import {Container,Grid,TextInput,Select,MultiSelect,Group,Tabs,Drawer,Button} from "@mantine/core";
 import Navbar from "../components/Navbar";
 import ProductCard from "../components/productCart";
 import ProductModal from "../components/productModal";
@@ -37,8 +27,7 @@ function Products() {
           <TextInput
             placeholder="Search"
             value={search}
-            onChange={(e) => setSearch(e.currentTarget.value)}
-          />
+            onChange={(e) => setSearch(e.currentTarget.value)}/>
 
           <Select data={CATEGORY_OPTIONS} placeholder="Category" />
           <MultiSelect data={CATEGORY_OPTIONS} placeholder="Multi" />
@@ -57,8 +46,7 @@ function Products() {
                 <Grid.Col span={4} key={p.id}>
                   <ProductCard
                     product={p}
-                    onView={(prod) => setSelected(prod)}
-                  />
+                    onView={(prod) => setSelected(prod)}/>
                 </Grid.Col>
               ))}
             </Grid>
@@ -72,8 +60,7 @@ function Products() {
         <ProductModal
           opened={!!selected}
           onClose={() => setSelected(null)}
-          product={selected}
-        />
+          product={selected}/>
 
         <Drawer opened={opened} onClose={() => setOpened(false)}>
           Filters here

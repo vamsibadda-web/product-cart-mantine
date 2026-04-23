@@ -1,4 +1,4 @@
-import { Group, Button, Container, Title, BackgroundImage } from "@mantine/core";
+import { Group, Button, Container, Title } from "@mantine/core";
 import { useNavigate } from "react-router-dom";
 
 function Navbar() {
@@ -12,12 +12,10 @@ function Navbar() {
             order={2}
             c="white"
             style={{ cursor: "pointer" }}
-            onClick={() => navigate("/")}
-          >
+            onClick={() => navigate("/")}>
             Welcome to Demo Products
           </Title>
-
-          <Group>
+         <Group>
             <Button variant="white" onClick={() => navigate("/")}>
               Home
             </Button>
@@ -30,5 +28,4 @@ function Navbar() {
       </Container>
   );
 }
-
 export default Navbar;
