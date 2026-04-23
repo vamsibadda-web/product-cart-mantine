@@ -9,7 +9,7 @@ export const PRODUCTS: Product[] = [
     id: 2,
     title: "Phone",
     price: 20000,
-    category: "fashion",
+    category: "electronics",
   },
   {
     id: 3,
@@ -21,6 +21,6 @@ export const PRODUCTS: Product[] = [
     id: 4,
     title: "car",
     price: 200000,
-    category: "Transport"
+    category: "transport"
   },
 ];
