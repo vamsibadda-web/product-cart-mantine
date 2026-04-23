@@ -1,15 +1,14 @@
-import { Button, Container, Title } from "@mantine/core";
-import { useNavigate } from "react-router-dom";
+import { Container, Title } from "@mantine/core";
+import Navbar from "../components/Navbar";
 
 function Home() {
-  const navigate = useNavigate();
-    return (
-    <Container>
-      <Title>Welcome</Title>
-      <Button mt="md" onClick={() => navigate("/products")}>
-        Go to Products
-      </Button>
-    </Container>
+  return (
+    <>
+      <Navbar />
+      <Container>
+        <Title>Welcome</Title>
+      </Container>
+    </>
   );
 }
 export default Home;
